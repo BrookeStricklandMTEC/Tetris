@@ -1,8 +1,7 @@
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonButton } from '@ionic/react';
 // import {Game} from './game/game'
-import ExploreContainer from '../components/ExploreContainer';
 import './Tab1.css';
-
+import StartButton from './components/StartButton/StartButton';
 
 
 const Game: React.FC = () => {
@@ -19,11 +18,10 @@ const Game: React.FC = () => {
             <IonTitle size="large">Play</IonTitle>
           </IonToolbar>
         </IonHeader>
-        <div className='button-wrapper'> 
-        <IonButton className='game-button' shape='round' fill='outline' > Play Game </IonButton>
-        {/* onClick={Redirect to='Game'} */}
-      </div>
-    </IonContent>
+        <div className='button-wrapper'>
+          <StartButton> </StartButton>
+        </div>
+      </IonContent>
     </IonPage >
   );
 };
