@@ -1,8 +1,8 @@
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonButton } from '@ionic/react';
 // import {Game} from './game/game'
 import './Tab1.css';
-import StartButton from './components/StartButton/StartButton';
-
+import { StyledStartButton } from './components/StartButton/StartButton.styles';
+import ExploreContainer from './components/ExploreContainer';
 
 const Game: React.FC = () => {
   return (
@@ -18,9 +18,7 @@ const Game: React.FC = () => {
             <IonTitle size="large">Play</IonTitle>
           </IonToolbar>
         </IonHeader>
-        <div className='button-wrapper'>
-          <StartButton> </StartButton>
-        </div>
+          <StyledStartButton> </StyledStartButton>
       </IonContent>
     </IonPage >
   );
